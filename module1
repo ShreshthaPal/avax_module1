@@ -10,20 +10,22 @@ contract Avax {
         assert(num!=0);
     }
 
-    function addition (uint _numerator, uint _denomenator) public pure returns (uint){
-        if(_numerator<_denomenator){
-           
-            revert("please provide two numbers");
-            
-        }
-        return _numerator+_denomenator;
-       
-
-    }
     function sub(uint a) public view returns (uint){
         require(a>0);
         return a-b;
 
     }
+
+    function division (uint _numerator, uint _denomenator) public pure returns (uint){
+        if(_numerator<_denomenator){
+           
+            revert("please provide a numerator greater than the denominator");
+            
+        }
+        return _numerator/_denomenator;
+       
+
+    }
+    
 
 }
