@@ -11,10 +11,11 @@ create a contract  to  deploy error handling process in solidity by using revert
 
 1) Create a contract named Avax
 2) initialize a variable (here variable is b) b=5;
-3) create a test function and pass num as parameter and set a condition where num should not be equal to 0
-4) create a second fuction called sub and pass parameter a and b and add a Require fuction where the condition is a should be greater than 0
-5) Now to demonstrate the revert fuction create a division function and pass numerator and denominator as parameters , and for the revert function set a condition where
-     the numerator should not be less than the denominator.
+3) create a function named module2 and pass num as parameter and set a condition where num should not be equal to 0
+4) create a second fuction called sub and pass parameter a and add a Require fuction where the condition is "a" should be greater than 0
+5) Now to demonstrate the revert fuction create a function named operationeration and pass num1 and num2 as parameters , and for the revert function set a condition where
+     the num1 should not be less than the num2.
+6) finally perforn the operation mentioned for thye function and return the result of the operation to the function.
     
 ## Getting Started
 
