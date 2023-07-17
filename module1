@@ -6,7 +6,7 @@ contract Avax {
     // uint public num = 0;
     uint b=5;
 
-    function test(uint num) public pure{
+    function module2(uint num) public pure{
         assert(num!=0);
     }
 
@@ -16,13 +16,13 @@ contract Avax {
 
     }
 
-    function division (uint _numerator, uint _denomenator) public pure returns (uint){
-        if(_numerator<_denomenator){
+    function operation (uint _num1, uint _num2) public pure returns (uint){
+        if(_num1<_num2){
            
-            revert("please provide a numerator greater than the denominator");
+            revert("please check that num1 should be less than num 2 ");
             
         }
-        return _numerator/_denomenator;
+        return _num1/_num2;
        
 
     }
