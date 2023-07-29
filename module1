@@ -6,17 +6,17 @@ contract Avax {
     // uint public num = 0;
     uint b=5;
 
-    function module2(uint num) public pure{
+    function assertion (uint num) public pure{
         assert(num!=0);
     }
 
-    function sub(uint a) public view returns (uint){
+    function requirement (uint a) public view returns (uint){
         require(a>0);
         return a-b;
 
     }
 
-    function operation (uint _num1, uint _num2) public pure returns (uint){
+    function revertion (uint _num1, uint _num2) public pure returns (uint){
         if(_num1<_num2){
            
             revert("please check that num1 should be less than num 2 ");
